@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f6ff;
+    color: #222;
+}
+
+nav {
+    background-color: #123b70;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: #123b70;
+    margin-top: 35px;
+}
+
+h2 {
+    color: #123b70;
+    margin-left: 30px;
+}
+
+p {
+    margin: 20px 30px;
+    font-size: 18px;
+}
+
+ul {
+    margin-left: 30px;
+    font-size: 18px;
+}
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}.leader {
+    background-color: white;
+    margin: 20px 30px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leader h3 {
+    color: #123b70;
+    margin-left: 20px;
+}
+
+.leader p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 0 12px;
+    }
+
+    h2 {
+        margin-left: 15px;
+        font-size: 21px;
+    }
+
+    p {
+        margin: 15px;
+        font-size: 16px;
+    }
+
+    ul {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+
+    .gallery {
+        margin: 15px;
+        gap: 12px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .leader {
+        margin: 15px;
+        padding: 12px;
+    }
+}
+#courses + ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+#courses + ul li {
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #123b70;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#courses + ul li:hover {
+    background-color: #dceaff;
+    transform: translateY(-3px);
+}
+h1 {
+    background: linear-gradient(135deg, #123b70, #2878c8);
+    color: white;
+    padding: 35px 20px;
+    margin: 0;
+    line-height: 1.5;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.welcome {
+    text-align: center;
+    background-color: #dceaff;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+.welcome h2 {
+    margin: 0;
+}
+
+.welcome p {
+    line-height: 1.6;
+}
